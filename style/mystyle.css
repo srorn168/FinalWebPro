@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+
+}
+:root{
+    --color-nav: #03a3ba;
+    --wbbase-font: Rubik;
+    --font-size-header: 22;
+    --font-size-base: 14;
+    
+    --gradient-base-accent-1: #d01418;
+    --color-base-solid-button-labels: #ffffff;
+
+    --gradient-base-accent-2: #000000;
+    --color-wb-hovercolor-button-text: #ffffff;
+
+    --color-wbmaincolors-text: #d01418;
+    --color-base-text: 0, 0, 0;
+    --color-wbbordercolor: #e4e4e4;
+    
+    --color-background: 255, 255, 255;
+    --gradient-background: #ffffff;
+
+    --payment-terms-background-color: #ffffff;
+
+    --color-wbprodct-background: #ffffff;
+}
+}
+a{
+    text-decoration: none;
+}
+.search-box{
+    transform: translate(-1px);
+    border: 1px solid var(--color-nav);
+    border-radius: 0;
+}
+.search-box:focus{
+    outline: none;
+    -webkit-box-shadow: none;
+    border: 1px solid var(--color-nav);
+}
+.input-group-btn{
+    border-radius: 0;
+    background: var(--color-nav);
+}
+.login_singup {
+    font-size: 18px;
+    padding-top: 15px;
+}
+.login_singup a{
+    text-decoration: none;
+
+}
+.group_icon_nav i{
+    font-size: 25px;
+    padding-top: 20px;
+    position: relative;
+}
+.group_icon_nav span{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 2px 4px;
+    background-color: var(--color-nav);
+    transform: translate(15px, 8px);
+    z-index: 200;
+    font-size: 12px;
+    color: #fff;
+}
+.menu{
+    height: 50px;
+    background-color: var(--color-nav);
+    color: #ddd;
+    font-weight: 600;
+}
+.dropdown :focus{
+    outline: none;
+    -webkit-box-shadow: none;
+}
+.navbar-nav .nav-item{
+    margin-right: 30px;
+    color: #fff;
+}
+.nav-link{
+    font-weight: 500;
+}
+.left-main{
+    height: 100vh;
+    overflow-y: scroll;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.card-left img{
+    border-radius: 5px;
+}
+.text-abs{
+    margin-top: -200px;
+    z-index: 1000;
+}
+.carousel-item img{
+    border-radius: 10px;
+}
+.info-box img{
+    background-color: #ddd;
+}
+.info-box .row {
+    padding: 20px 0;
+}
+.info-box [class*=col-] {
+    border-right: 1px solid #ddd;
+}
+.info-box [class*=col-]:nth-child(4){
+    border-right: 1px solid #fff;
+}
