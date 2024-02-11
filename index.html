@@ -247,6 +247,92 @@
             opacity: 1;
             margin-top: -120px;
         }
+        .ads-display{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .ads-display1{
+            width: 50%;
+            border: 2px solid black;
+            height: 200px;
+        }
+        .ads-display2{
+            width: 50%;
+            border: 2px solid black;
+            height: 200px;
+        }
+        .section_destop{
+            margin-top: 50px;
+            padding: 0px 50px;
+        }
+        .section_destop .cate_product h3{
+            padding-left: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: gray;
+        }
+        .section_destop .cate_product p{
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        .section_destop .cate_product p:hover{
+            color: #0071C7;
+        }
+        .section_destop .cate_product ul{
+            margin-top: -10px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        .section_destop .cate_product h4{
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        .section_destop .cate_product .color-price{
+            padding-left: 20px;
+        }
+        .section_destop .cate_product .price{
+            color: #03a3ba;
+            padding-left: 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .section_destop .cate_product .col-2 .btn{
+            background-color: #0071C7;
+            height: 50px;
+            transition: all .3s;
+            opacity: 0;
+        }
+        .section_destop .cate_product .col-2:hover .btn {
+            opacity: 1;
+            color: #fff;
+        }
+        .section_destop .icon_abs {
+            margin-top: -150px;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transition: all 0.5s;
+        }
+        .section_destop .icon_abs i{
+            margin-left: 150px;
+            font-size: 15px;
+            padding: 7px;
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+            background-color: rgba(169, 169, 169, 0.729);
+            border-radius: 50%;
+            color: #fff;
+            align-items: center;
+        }
+        .section_destop .cate_product .col-2:hover .icon_abs{
+            opacity: 1;
+            margin-top: -120px;
+        }
+
       </style>
 <body>
     <!-- Navigation -->
@@ -578,10 +664,146 @@
                 <span class="price mt-3">$100.00</span><br>
                 <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
             </div>
-           
-           
+            <div class="ads-display">
+                <div class="ads-display1">
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
+                </div>
+            <div class="ads-display2"  >
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
+            </div> 
         </div>
-   
+        <div class="section_destop vh-100">
+            <div class="title_cate p-4 d-flex justify-content-between">
+                 <h3>Desktop Category</h3>
+                 <a href="#" class="btn btn-primary">View All</a>
+            </div>
+            <div class="row cate_product d-flex justify-content-between">
+                 <div class="position-relative col-2 p-3">
+                     <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                     <div class="icon_abs position-absolute ">
+                         <i class="fa-solid fa-layer-group me-4"></i>
+                         <i class="fa-solid fa-heart me-4"></i>
+                     </div>
+                     <h3>Model</h3>
+                     <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                     <ul class="list-unstyled text-warning">
+                         <li>Material : Metal</li>
+                         <li>Dimension : 5inch x 8inch x 9inch</li>
+                     </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Colour:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                             <div class="price-option">
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                                <button class="btn btn-outline-dark w-75 mt-3">View Detail</button>
+                             </div>
+                        </div>
+                 </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>Material : Metal</li>
+                            <li>Dimension : 5inch x 8inch x 9inch</li>
+                        </ul>
+                            <div class="color-price">
+                                <div class="color-option d-flex">
+                                    <span class="color">Colour:</span>
+                                    <div class="circles">
+                                        <span class="circle blue active" id="blue"></span>
+                                        <span class="circle pink " id="pink"></span>
+                                        <span class="circle yellow " id="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price mt-3">$100.00</span><br>
+                                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                                    <button class="btn btn-outline-dark w-75 mt-3">View Detail</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>Material : Metal</li>
+                            <li>Dimension : 5inch x 8inch x 9inch</li>
+                        </ul>
+                            <div class="color-price">
+                                <div class="color-option d-flex">
+                                    <span class="color">Colour:</span>
+                                    <div class="circles">
+                                        <span class="circle blue active" id="blue"></span>
+                                        <span class="circle pink " id="pink"></span>
+                                        <span class="circle yellow " id="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price mt-3">$100.00</span><br>
+                                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                                    <button class="btn btn-outline-dark w-75 mt-3">View Detail</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>Material : Metal</li>
+                            <li>Dimension : 5inch x 8inch x 9inch</li>
+                        </ul>
+                            <div class="color-price">
+                                <div class="color-option d-flex">
+                                    <span class="color">Colour:</span>
+                                    <div class="circles">
+                                        <span class="circle blue active" id="blue"></span>
+                                        <span class="circle pink " id="pink"></span>
+                                        <span class="circle yellow " id="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price mt-3">$100.00</span><br>
+                                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                                    <button class="btn btn-outline-dark w-75 mt-3">View Detail</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>Material : Metal</li>
+                            <li>Dimension : 5inch x 8inch x 9inch</li>
+                        </ul>
+                            <div class="color-price">
+                                <div class="color-option d-flex">
+                                    <span class="color">Colour:</span>
+                                    <div class="circles">
+                                        <span class="circle blue active" id="blue"></span>
+                                        <span class="circle pink " id="pink"></span>
+                                        <span class="circle yellow " id="yellow"></span>
+                                    </div>
+                                </div>
+                                <div class="price-option">
+                                    <span class="price mt-3">$100.00</span><br>
+                                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                                    <button class="btn btn-outline-dark w-75 mt-3">View Detail</button>
+                                </div>
+                            </div>
+                    </div>
 
 
 
