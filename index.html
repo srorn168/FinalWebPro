@@ -250,89 +250,35 @@
         .ads-display{
             display: flex;
             justify-content: space-between;
-            margin-top: 20px;
+            margin-top: 50px;
+            padding: 0px 50px;
         }
         .ads-display1{
-            width: 50%;
+            width: 45%;
             border: 2px solid black;
             height: 200px;
+            text-align: center;
         }
         .ads-display2{
-            width: 50%;
+            width: 45%;
             border: 2px solid black;
             height: 200px;
+            text-align: center;
         }
         .section_desktop{
             margin-top: 50px;
             padding: 0px 50px;
         }
-        .section_desktop .cate_product h3{
-            padding-left: 20px;
-            font-size: 16px;
-            font-weight: 600;
-            color: gray;
+        /*Head-set-product*/
+        .head-set-product{
+            margin-top: 50px;
+            padding: 0px 50px;
         }
-        .section_desktop .cate_product p{
-            padding-left: 20px;
-            font-size: 15px;
+        /*new-product-show*/
+        .new-product-show{
+            margin-top: 50px;
+            padding: 0px 50px;
         }
-        .section_desktop .cate_product p:hover{
-            color: #0071C7;
-        }
-        .section_desktop .cate_product ul{
-            margin-top: -10px;
-            padding-left: 20px;
-            font-size: 15px;
-        }
-        .section_desktop .cate_product h4{
-            padding-left: 20px;
-            font-size: 15px;
-        }
-        .section_desktop .cate_product .color-price{
-            padding-left: 20px;
-        }
-        .section_desktop .cate_product .price{
-            color: #03a3ba;
-            padding-left: 20px;
-            font-size: 16px;
-            font-weight: 600;
-        }
-        .section_desktop .cate_product .col-2 .btn{
-            background-color: #0071C7;
-            height: 50px;
-            transition: all .3s;
-            opacity: 0;
-        }
-        .section_desktop .cate_product .col-2:hover .btn {
-            opacity: 1;
-            color: #fff;
-        }
-        .section_desktop .icon_abs {
-            margin-top: -150px;
-            width: 200px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            opacity: 0;
-            transition: all 0.5s;
-        }
-        .section_desktop .icon_abs i{
-            margin-left: 150px;
-            font-size: 15px;
-            padding: 7px;
-            width: 30px;
-            height: 30px;
-            margin-top: 5px;
-            background-color: rgba(169, 169, 169, 0.729);
-            border-radius: 50%;
-            color: #fff;
-            align-items: center;
-        }
-        .section_desktop .cate_product .col-2:hover .icon_abs{
-            opacity: 1;
-            margin-top: -120px;
-        }
-        
       </style>
 <body>
     <!-- Navigation -->
@@ -664,6 +610,8 @@
                 <span class="price mt-3">$100.00</span><br>
                 <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
             </div>
+         </div>
+    </div>
             <div class="ads-display">
                 <div class="ads-display1">
                     <img width="100%" src="" alt="">
@@ -863,18 +811,510 @@
                 </div>
                 </div>
             </div>
-            
-            <!-- Product Buttons -->
-            <div class="row justify-content-center py-5">
-                <div class="col-2">
-                    <button class="btn btn-primary" id="loadMore">Load More</button>
+       <div class="ads-display">
+                <div class="ads-display1">
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
                 </div>
-                <div class="col-2">
-                    <button class="btn btn-primary" id="showLess">Show Less</button>
+            <div class="ads-display2"  >
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
+            </div> 
+        </div>
+        <div class="head-set-product">
+            <div class="title_cate p-4 d-flex justify-content-between">
+                <h3>Headset Category</h3>
+                <a href="#" class="btn btn-primary">View All</a>
+           </div>
+           <div class="row cate_product d-flex justify-content-between">
+                <div class="position-relative col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
                 </div>
-            </div>  
-        </section>
-
+                <div class="col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                </div>
+                <div class="col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                        </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                </div>
+                <div class="col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                <div class="col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                <div class="col-2 p-3">
+                    <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                    <div class="icon_abs position-absolute ">
+                        <i class="fa-solid fa-layer-group me-4"></i>
+                        <i class="fa-solid fa-heart me-4"></i>
+                    </div>
+                    <h3>Model</h3>
+                    <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    <ul class="list-unstyled text-warning">
+                        <li>500+ pages</li>
+                        <li>60+ components</li>
+                    </ul>
+                    <div class="color-price">
+                        <div class="color-option d-flex">
+                            <span class="color">Color:</span>
+                            <div class="circles">
+                                <span class="circle blue active" id="blue"></span>
+                                <span class="circle pink " id="pink"></span>
+                                <span class="circle yellow " id="yellow"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price mt-3">$100.00</span><br>
+                    <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                </div>
+            </div>
+            <div class="ads-display">
+                <div class="ads-display1">
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
+                </div>
+            <div class="ads-display2"  >
+                    <img width="100%" src="" alt="">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="new-product-show">
+                <div class="title_cate mt-3 d-flex justify-content-between align-items-center">
+                    <h3>New Product</h3>
+                    <a href="#" class="btn btn-primary">View All</a>
+                </div>
+                <div class="row cate_product d-flex justify-content-between">
+                    <div class="position-relative col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                            </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                    </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                        </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                        </div>
+                    <div class="col-2 p-3">
+                        <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                        <div class="icon_abs position-absolute ">
+                            <i class="fa-solid fa-layer-group me-4"></i>
+                            <i class="fa-solid fa-heart me-4"></i>
+                        </div>
+                        <h3>Model</h3>
+                        <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                        <ul class="list-unstyled text-warning">
+                            <li>500+ pages</li>
+                            <li>60+ components</li>
+                        </ul>
+                        <div class="color-price">
+                            <div class="color-option d-flex">
+                                <span class="color">Color:</span>
+                                <div class="circles">
+                                    <span class="circle blue active" id="blue"></span>
+                                    <span class="circle pink " id="pink"></span>
+                                    <span class="circle yellow " id="yellow"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="price mt-3">$100.00</span><br>
+                        <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                        </div>
+                    </div>
+                </div>
+                    <div class="ads-display">
+                        <div class="ads-display1">
+                            <img width="100%" src="" alt="">
+                            <img src="" alt="" />
+                        </div>
+                    <div class="ads-display2"  >
+                            <img width="100%" src="" alt="">
+                            <img src="" alt="" />
+                        </div>
+                    </div>
+                    <div class="best-product-new">
+                        <div class="title_cate mt-3 d-flex justify-content-between align-items-center">
+                            <h3>Best Product</h3>
+                            <a href="#" class="btn btn-primary">View All</a>
+                        </div>
+                        <div class="row cate_product d-flex justify-content-between">
+                            <div class="position-relative col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                            <div class="col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                            <div class="col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                            <div class="col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                            <div class="col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                            <div class="col-2 p-3">
+                                <img width="200" src="https://media.istockphoto.com/id/479520746/photo/laptop-with-blank-screen-on-white.jpg?s=612x612&w=0&k=20&c=V5dj0ayS8He0BP4x15WR5t5NKYzWTKv7VdWvD2SAVAM=" alt="">
+                                <div class="icon_abs position-absolute ">
+                                    <i class="fa-solid fa-layer-group me-4"></i>
+                                    <i class="fa-solid fa-heart me-4"></i>
+                                </div>
+                                <h3>Model</h3>
+                                <p>Description Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                                <ul class="list-unstyled text-warning">
+                                    <li>500+ pages</li>
+                                    <li>60+ components</li>
+                                </ul>
+                                <div class="color-price">
+                                    <div class="color-option d-flex">
+                                        <span class="color">Color:</span>
+                                        <div class="circles">
+                                            <span class="circle blue active" id="blue"></span>
+                                            <span class="circle pink " id="pink"></span>
+                                            <span class="circle yellow " id="yellow"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="price mt-3">$100.00</span><br>
+                                <input type="submit" class="btn form-control mt-3" name="add_to_cart"  value="Add to Cart"/>
+                            </div>
+                    </div>
+                </div>
    <script src="./js/pricefilter.js"></script>
    <script src="js/add_to_cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
